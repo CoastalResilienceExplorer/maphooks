@@ -1,0 +1,7 @@
+{
+    "name": "maphooks",
+    "version": "0.0.1",
+    "dependencies": {
+        "mapbox-gl": "^2.6.1"
+    }
+}
