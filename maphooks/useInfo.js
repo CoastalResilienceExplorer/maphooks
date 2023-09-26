@@ -8,8 +8,7 @@ export function useInfo(initial_state, reducer) {
     const [state, dispatch] = useReducer(reducer, initial_state)
 
     function useFirst(confirmIf, event, skipIf) {
-        console.log(skipIf)
-        if (confirmIf() && skipIf !== undefined && !skipIf() && state[event] === null) {
+        if (confirmIf() && (skipIf === undefined || !skipIf()) && state[event] === null) {
             dispatch({
                 type: event,
                 payload: true
