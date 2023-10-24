@@ -33,7 +33,6 @@ const getViewportParams = (initialViewport: ViewportParams): ViewportParams => {
 };
 
 const setViewportParams = (viewportParams: ViewportParams) => {
-  console.log("Called")
   const searchParams = new URLSearchParams(window.location.search);
   searchParams.set("lat", viewportParams.latitude.toString());
   searchParams.set("lon", viewportParams.longitude.toString());
