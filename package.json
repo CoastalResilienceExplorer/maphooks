@@ -2,6 +2,7 @@
     "name": "maphooks",
     "version": "0.0.1",
     "dependencies": {
+        "@react-hook/debounce": "^4.0.0",
         "mapbox-gl": "^2.6.1"
     }
 }
